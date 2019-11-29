@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">container</string>
+
+    <string-array name="spinner">
+        <item>电磁锁</item>
+        <item>弹簧货道</item>
+    </string-array>
+</resources>

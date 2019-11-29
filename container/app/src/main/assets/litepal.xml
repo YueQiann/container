@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="demo" />
+    <version value="1" />
+    <list>
+        <mapping class="com.qianyue.container.db.GoodsInfo" />
+        <mapping class="com.qianyue.container.db.NeedleInfo" />
+        <mapping class="com.qianyue.container.db.UserInfo" />
+        <mapping class="com.qianyue.container.db.ReceiveInfo" />
+        <mapping class="com.qianyue.container.db.SupplyInfo" />
+    </list>
+</litepal>

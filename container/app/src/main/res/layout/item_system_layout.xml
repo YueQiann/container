@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/system_product_btn"
+            style="@style/sysbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/default_half_dp"
+            android:layout_marginBottom="@dimen/default_half_dp"
+            android:layout_weight="1"
+            android:text="产品编辑" />
+
+        <Button
+            android:id="@+id/system_personnel_btn"
+            style="@style/sysbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/default_half_dp"
+            android:layout_marginRight="@dimen/default_half_dp"
+            android:layout_marginBottom="@dimen/default_half_dp"
+            android:layout_weight="1"
+            android:text="人员管理" />
+
+        <Button
+            android:id="@+id/system_replenishment_btn"
+            style="@style/sysbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/default_half_dp"
+            android:layout_marginBottom="@dimen/default_half_dp"
+            android:layout_weight="1"
+            android:text="补货管理" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/system_form_btn"
+            style="@style/sysbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/default_half_dp"
+            android:layout_marginRight="@dimen/default_half_dp"
+            android:layout_weight="1"
+            android:text="查看报表" />
+
+        <Button
+            android:id="@+id/system_device_btn"
+            style="@style/sysbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/default_half_dp"
+            android:layout_marginTop="@dimen/default_half_dp"
+            android:layout_marginRight="@dimen/default_half_dp"
+            android:layout_weight="1"
+            android:text="设备管理" />
+
+        <Button
+            android:id="@+id/system_cargo_way"
+            style="@style/sysbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/default_half_dp"
+            android:layout_marginTop="@dimen/default_half_dp"
+            android:layout_weight="1"
+            android:text="设置货道" />
+
+    </LinearLayout>
+
+</LinearLayout>

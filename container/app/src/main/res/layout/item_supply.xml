@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_supply"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_supply_current_sum_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_dp"
+        android:layout_marginRight="@dimen/default_dp"
+        android:text="当前存量："
+        android:textColor="@color/colorBlue"
+        app:layout_constraintBottom_toTopOf="@+id/item_supply_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_supply_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_dp"
+        android:text="输入存量："
+        android:textColor="@color/colorBlue"
+        app:layout_constraintBottom_toBottomOf="@+id/item_supply_et"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_supply_et" />
+
+    <EditText
+        android:id="@+id/item_supply_et"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="@dimen/default_dp"
+        android:background="@drawable/bg_edit_gray"
+        android:inputType="number"
+        android:padding="8dp"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/item_supply_yes_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_supply_tv"
+        app:layout_constraintTop_toBottomOf="@+id/item_supply_current_sum_tv" />
+
+    <Button
+        android:id="@+id/item_supply_yes_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        app:layout_constraintBottom_toTopOf="@+id/item_supply_no_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_supply_et" />
+
+
+    <Button
+        android:id="@+id/item_supply_no_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_supply_yes_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

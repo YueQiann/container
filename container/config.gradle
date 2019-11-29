@@ -1,0 +1,49 @@
+ext {
+
+    depVersion = [
+            butterknifeVersion                  : "10.1.0",
+            glideVersion                        : "4.9.0",
+            bannerVersion                       : "1.4.10",
+            BaseRecyclerViewAdapterHelperVersion: "2.9.30",
+            litepalVersion                      : "3.0.0",
+            pagerlayoutmanagerVersion           : "2.3.8",
+            rxpermissionsVersion                : "0.10.2",
+            rxandroidVersion                    : "2.1.0",
+            rxjavaVersion                       : "2.2.4",
+            crashVersion                        : "2.2.0",
+            workRuntimeVersion                  : "1.0.0",
+            workFirebase                        : "1.0.0-alpha11",
+            cameraxVersion                      : "1.0.0-alpha05",
+            cameraxViewVersion                  : "1.0.0-alpha02",
+            cameraxExtVersion                   : "1.0.0-alpha02",
+    ]
+
+    deps = [
+            butterknife                  : [
+                    butterknife: "com.jakewharton:butterknife:${depVersion.butterknifeVersion}",
+                    compiler   : "com.jakewharton:butterknife-compiler:${depVersion.butterknifeVersion}",
+            ],
+            glide                        : [
+                    glide   : "com.github.bumptech.glide:glide:${depVersion.glideVersion}",
+                    compiler: "com.github.bumptech.glide:compiler:${depVersion.glideVersion}"
+            ],
+            banner                       : "com.youth.banner:banner:${depVersion.bannerVersion}",
+            BaseRecyclerViewAdapterHelper: "com.github.CymChad:BaseRecyclerViewAdapterHelper:${depVersion.BaseRecyclerViewAdapterHelperVersion}",
+            litepal                      : "org.litepal.android:java:${depVersion.litepalVersion}",
+            pagerlayoutmanager           : "com.gcssloop.recyclerview:pagerlayoutmanager:${depVersion.pagerlayoutmanagerVersion}",
+            rxpermissions                : "com.github.tbruyelle:rxpermissions:${depVersion.rxpermissionsVersion}",
+            rxjava                       : [
+                    rxjava   : "io.reactivex.rxjava2:rxandroid:${depVersion.rxandroidVersion}",
+                    rxandroid: "io.reactivex.rxjava2:rxjava:${depVersion.rxjavaVersion}",
+            ],
+            crash                        : "cat.ereza:customactivityoncrash:${depVersion.crashVersion}", // bug 捕捉
+            workRuntime                  : "android.arch.work:work-runtime:${depVersion.workRuntimeVersion}",
+            workFirebase                 : "android.arch.work:work-firebase:${depVersion.workFirebase}",
+            camera                       : [
+                    core   : "androidx.camera:camera-core:${depVersion.cameraxVersion}",
+                    camera2: "androidx.camera:camera-camera2:${depVersion.cameraxVersion}",
+                    view   : "androidx.camera:camera-view:${depVersion.cameraxViewVersion}",
+                    exts   : "androidx.camera:camera-extensions:${depVersion.cameraxExtVersion}",
+            ],
+    ]
+}

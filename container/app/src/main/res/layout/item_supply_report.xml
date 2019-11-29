@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <TextView
+        android:id="@+id/item_supply_time_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:text="时间"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/item_supply_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:text="产品名"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/item_supply_cargo_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:text="货道"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/item_supply_user_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:text="补货人"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/item_supply_count_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:text="补货数量"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+</LinearLayout>

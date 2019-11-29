@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_dp">8dp</dimen>
+    <dimen name="default_sp">15sp</dimen>
+    
+    <dimen name="default_half_dp">4dp</dimen>
+</resources>

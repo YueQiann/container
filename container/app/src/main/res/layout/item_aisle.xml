@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/item_aisle_needle_ll"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_edit_gray_radian"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/item_aisle_recover_ll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="机针仓门"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/default_sp" />
+
+        <EditText
+            android:id="@+id/item_aisle_needle_et"
+            style="@style/inputEt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_aisle_recover_ll"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edit_gray_radian"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/item_aisle_type_ll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_aisle_needle_ll">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="回收仓库"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/default_sp" />
+
+        <EditText
+            android:id="@+id/item_aisle_recover_et"
+            style="@style/inputEt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_aisle_type_ll"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edit_gray_radian"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_aisle_recover_ll">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="设备类型"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/default_sp" />
+
+
+        <Spinner
+            android:id="@+id/item_aisle_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:entries="@array/spinner"
+            android:spinnerMode="dialog"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/default_sp" />
+
+        <!--<EditText-->
+        <!--android:id="@+id/item_personnel_info_num_et"-->
+        <!--style="@style/inputEt"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:inputType="text" />-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
